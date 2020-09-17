@@ -1,55 +1,39 @@
+
 // Your code here
-class animal{
-   constractor(name , gender) {
-    this.name = name ;
-    this.gender = gender ;
-  }
-  speak(){
-    
-  }
-}
-class Cat extends animal{
-  constractor(name , gender) {
-   this.name = name ;
-    this.gender = gender ;
-  }
-  speak(){
-    returns `${this.name} says meow!`;
-  }
+
+class Cat {
+    constructor(name, sex) {
+        this.name = name;
+        this.sex = sex;
+    }
+
+    speak() {
+        return `${this.name} says meow!`;
+    }
 }
 
- cat = new Cat("Sasha", "female");
- cat.speak()
+class Dog {
+    constructor(name, sex) {
+        this.name = name;
+        this.sex = sex;
+    }
 
-class Dog  extends animal{
-  constractor(name , gender) {
-    this.name = name ;
-    this.gender = gender ;
-  }
-  speak(){
-    returns `${this.name} says woof!`;
-  }
+    speak() {
+        return `${this.name} says woof!`;
+    }
 }
+class Bird {
+    constructor(name, sex) {
+        this.name = name;
+        this.sex = sex;
+    }
 
-let dog = new Dog("Rufio", "male");
- dog.speak() ;
- 
- 
- class Bird {
-  constractor(name , gender) {
-    this.name = name ;
-    this.gender = gender ;
-  }
-  speak(){
-    returns `It's me! ${this.name}, the parrot!`;
-  }
+    speak() {
+        if (this.sex == "male") {
+            return `It's me! ${this.name}, the parrot!`;
+        } else {
+            return `${this.name} says squawk!`;
+        }
+    }
 }
-
-
- let bird = new Bird("Pablo", "male")
-  bird.speak();
-    let  bird2 = new Bird("Mable", "female")
-    
-    
-
 
